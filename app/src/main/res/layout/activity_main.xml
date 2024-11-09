@@ -46,7 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvResult"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"/>
 
     <Button
         android:id="@+id/btnSeven"
@@ -61,7 +61,8 @@
         app:layout_constraintEnd_toStartOf="@id/btnEight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnClear"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="number"/>
 
     <Button
         android:id="@+id/btnEight"
@@ -76,7 +77,8 @@
         app:layout_constraintEnd_toStartOf="@id/btnNine"
         app:layout_constraintStart_toEndOf="@id/btnSeven"
         app:layout_constraintTop_toBottomOf="@+id/btnClear"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="number"/>
 
     <Button
         android:id="@+id/btnNine"
@@ -91,7 +93,8 @@
         app:layout_constraintEnd_toStartOf="@id/btnDivide"
         app:layout_constraintStart_toEndOf="@id/btnEight"
         app:layout_constraintTop_toBottomOf="@+id/btnClear"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="number"/>
 
     <Button
         android:id="@+id/btnDivide"
@@ -106,7 +109,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnNine"
         app:layout_constraintTop_toBottomOf="@+id/btnClear"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="operator"/>
 
     <Button
         android:id="@+id/btnFour"
@@ -121,7 +125,8 @@
         app:layout_constraintEnd_toStartOf="@id/btnFive"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSeven"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="number"/>
 
     <Button
         android:id="@+id/btnFive"
@@ -136,7 +141,8 @@
         app:layout_constraintEnd_toStartOf="@id/btnSix"
         app:layout_constraintStart_toEndOf="@id/btnFour"
         app:layout_constraintTop_toBottomOf="@+id/btnEight"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="number"/>
 
     <Button
         android:id="@+id/btnSix"
@@ -151,7 +157,8 @@
         app:layout_constraintEnd_toStartOf="@id/btnMultiply"
         app:layout_constraintStart_toEndOf="@id/btnFive"
         app:layout_constraintTop_toBottomOf="@+id/btnNine"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="number"/>
 
     <Button
         android:id="@+id/btnMultiply"
@@ -166,7 +173,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnSix"
         app:layout_constraintTop_toBottomOf="@+id/btnDivide"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="operator"/>
 
     <Button
         android:id="@+id/btnOne"
@@ -181,7 +189,8 @@
         app:layout_constraintEnd_toStartOf="@id/btnTwo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnFour"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="number"/>
 
     <Button
         android:id="@+id/btnTwo"
@@ -196,7 +205,8 @@
         app:layout_constraintEnd_toStartOf="@id/btnThree"
         app:layout_constraintStart_toEndOf="@id/btnOne"
         app:layout_constraintTop_toBottomOf="@+id/btnFive"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="number"/>
 
     <Button
         android:id="@+id/btnThree"
@@ -211,7 +221,8 @@
         app:layout_constraintEnd_toStartOf="@id/btnMinus"
         app:layout_constraintStart_toEndOf="@id/btnTwo"
         app:layout_constraintTop_toBottomOf="@+id/btnSix"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="number"/>
 
     <Button
         android:id="@+id/btnMinus"
@@ -226,7 +237,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnThree"
         app:layout_constraintTop_toBottomOf="@+id/btnMultiply"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="operator"/>
 
     <Button
         android:id="@+id/btnZero"
@@ -241,7 +253,8 @@
         app:layout_constraintEnd_toStartOf="@id/btnFloatingPoint"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnOne"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="number"/>
 
     <Button
         android:id="@+id/btnFloatingPoint"
@@ -256,7 +269,7 @@
         app:layout_constraintEnd_toStartOf="@id/btnPlus"
         app:layout_constraintStart_toEndOf="@id/btnZero"
         app:layout_constraintTop_toBottomOf="@+id/btnTwo"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"/>
 
     <Button
         android:id="@+id/btnPlus"
@@ -271,7 +284,8 @@
         app:layout_constraintEnd_toStartOf="@id/btnEquals"
         app:layout_constraintStart_toEndOf="@id/btnFloatingPoint"
         app:layout_constraintTop_toBottomOf="@+id/btnThree"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:tag="operator"/>
 
     <Button
         android:id="@+id/btnEquals"
@@ -287,6 +301,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnPlus"
         app:layout_constraintTop_toBottomOf="@+id/btnMinus"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
