@@ -12,9 +12,23 @@ class CalculatorLogic(
         val calculation = calculationField.text.toString()
         if (calculation.isNotEmpty()) {
             val result = ExpressionBuilder(calculation).build().evaluate()
-            resultField.text = buildString {
+
+            var resultString = result.toString()
+
+            if (resultString.contains(".")) {
+                val decimalPart = resultString.substringAfter(".")
+                if (decimalPart.length > 5) {
+                    resultString = resultString.substring(0, resultString.indexOf('.') + 6) + "..."
+                }
+            }
+
+            if (result % 1 == 0.0) {
+                resultString = result.toInt().toString()
+            }
+
+            resultField.text = buildString{
                 append("= ")
-                append(result)
+                append(resultString)
             }
         }
     }
