@@ -17,6 +17,16 @@ class ButtonHandlers(private val calculationField: TextView, private val resultF
     }
 
     fun onNumberButtonClick(button: Button) {
+        //Stops the user from entering more than 10 digits before the operator
+        if (!calculationField.text.contains(operatorsRegex) && calculationField.length() >= 10) {
+            return
+        }
+
+        //Stops the user from entering more than 10 digits after the operator
+        if (calculationField.text.contains(operatorsRegex) && calculationField.text.split(" ").last().length >= 10) {
+            return
+        }
+
         val buttonText = button.text.toString()
         calculationField.append(buttonText)
     }
